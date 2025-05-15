@@ -1,0 +1,98 @@
+.header {
+    margin-bottom: calc(100vw/1440*18);
+}
+
+.logo {
+    margin-top: calc(100vw/1440*23);
+    margin-left: calc(100vw/1440*85);
+}
+
+.logo__img {
+    width: calc(100vw/1440*107);
+    margin-right: calc(100vw/1440*8);
+}
+
+.logo__txt {
+    width: calc(100vw/1440*96);
+}
+
+.profile {
+    margin-left: calc(100vw/1440*108);
+    margin-top: calc(100vw/1440*69);
+    height: calc(100vw/1440*25);
+    align-items: center;
+}
+
+.profile__img {
+    width: calc(100vw/1440*26);
+}
+
+.profile__link {
+    margin-left: calc(100vw/1440*14);
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-size: calc(100vw/1440*18);
+    font-weight: 500;
+}
+
+@media(hover:hover) {
+    .profile__link::after {
+        background-color: #fff;
+        display: block;
+        content: "";
+        height: calc(100vw/1440);
+        width: 0%;
+        margin-top: calc(100vw/1440*2);
+    }
+
+    .profile__link:hover:after {
+        width: 100%;
+    }
+}
+
+@media(max-width: 450px) {
+    .header {
+        margin-bottom: calc(100vw/375*65.31);
+    }
+
+    .logo {
+        margin-top: calc(100vw/375*40);
+        margin-left: calc(100vw/375*15);
+    }
+
+    .logo__img {
+        width: calc(100vw/375*51.73);
+        margin-right: calc(100vw/375*3.87);
+    }
+
+    .logo__txt {
+        width: calc(100vw/375*46.41);
+    }
+
+    .profile {
+        margin-left: calc(100vw/375*205);
+        margin-top: calc(100vw/375*51);
+        height: calc(100vw/375*25);
+        width: calc(100vw/375*38);
+        justify-content: center;
+    }
+
+    .profile__img {
+        display: none;
+    }
+
+    .profile__link {
+        margin-left: 0;
+        font-size: calc(100vw/375*14);
+    }
+
+    .profile__link::after {
+        background-color: #fff;
+        display: block;
+        content: "";
+        height: calc(100vw/375);
+        width: 100%;
+        margin-top: calc(100vw/375*6);
+
+    }
+}

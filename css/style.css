@@ -1,1 +1,19 @@
-/*  */
+* {
+    color: #fff;
+}
+
+.df {
+    display: flex;
+}
+
+.container {
+    background-color: #000;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/NotoSans-VariableFont_wdth\,wght.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
